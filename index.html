@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet</title>
+    <script src="animals.js" defer></script>
+
+    <style>
+        h1 {
+            color:rgb(146, 79, 241);}
+        p {
+            color:rgb(17, 97, 201);
+        }
+
+        li{
+            font-size: larger;
+            font-family: 'Courier New', Courier, monospace;
+        }
+      
+        img{
+            border-radius: 10px;
+            width:400px;
+            height:auto;
+            object-fit:cover;
+
+        }
+
+        button{
+            border-radius: 10px;
+            padding:5px;
+            background-color: rgb(186, 61, 26);
+        }
+
+        header{
+            background-color: rgb(203, 80, 80);
+            text-align: center;
+            padding: 10px;
+            margin: auto;
+        }
+
+        fieldset{
+            width: fit-content;
+            margin: auto;
+            border-radius: 10px;
+            border: dashed rgb(9, 60, 80);
+            background-color: rgb(231, 180, 86);
+        }
+
+        legend{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            font-size: large;
+        }
+        body{
+            background-color: rgb(132, 182, 184);
+            margin: 0;
+        }
+
+        label{
+            font-size: larger;
+            font-weight: bold;
+            color: rgb(100, 53, 9);
+        }
+
+        div {
+            width: 300px;
+            margin: auto;
+            }
+
+        .selectedPetInfo {
+            font-size: large;
+        }
+
+        main{
+            background-color: rgb(238, 209, 147);
+        }
+
+        .section{
+            border-radius: 10px;
+            background-color: aliceblue;
+            padding: 20px;
+            width: 800px;
+            margin: auto;
+            border: solid 3px;
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Stella the pet's house</h1>
+    </header>
+ <!-- The list of animals -->
+    <main>
+        <div class ="section">
+            <fieldset>
+                <legend>Pet's list</legend>
+                <ol>
+
+                    <li>Stella</li>
+
+                    <li>Cody</li>
+
+                    <li>Mango</li>
+
+                    <li>Lucy</li>
+
+                    <li>Buhmie</li>
+
+                </ol>
+            </fieldset>
+            <br><br>
+            <div>
+
+                <label for="petNum">Enter the pet's number:</label>
+
+                <input type="text" id="petNum" name="petNum" maxlength="4" size="4"></input>
+                <br><br>
+
+                <button onclick="showInfo()">Click for more information!</button>
+
+            </div>
+            <br><br>
+
+            <div class ="info">
+                <p class ="dogImg"></p>
+                <p class = "selectedPetInfo"></p>
+            </div>
+        </div>
+    </main>  
+        
+</body>
+</html>
